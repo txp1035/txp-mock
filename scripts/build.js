@@ -1,6 +1,6 @@
 const fs = require("fs");
 const Mock = require("mockjs");
-const arr = require("./apiDate.js");
+const arr = require("./apiDate.jsx");
 const {buildApiDateStr,buildHttpFileStr} = require("./common.js");
 let ApiDateStr = "";
 
