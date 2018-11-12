@@ -1,24 +1,22 @@
 {
-  "name": "analog-http",
+  "name": "txp-mock",
   "version": "1.0.0",
   "description": "模拟后端请求",
   "main": "index.js",
   "scripts": {
-    "test": "node scripts/test.js",
-    "build": "node scripts/build.js",
-    "start": "node http/http.js"
+    "start": "node src/build.js && node http/http.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ShawDanon/analog-http.git"
+    "url": "git+https://github.com/ShawDanon/txp-mock.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ShawDanon/analog-http/issues"
+    "url": "https://github.com/ShawDanon/txp-mock/issues"
   },
-  "homepage": "https://github.com/ShawDanon/analog-http#readme",
+  "homepage": "https://github.com/ShawDanon/txp-mock#readme",
   "dependencies": {
     "express": "^4.16.3",
     "mockjs": "^1.0.1-beta3"

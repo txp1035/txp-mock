@@ -4,18 +4,6 @@ const defaultTempalte = {
       let resData=${data};
       res.send(JSON.stringify(resData));
     })\n
-    `,
-  page: ({ method, url, data }) => `
-    app.${method}('${url}',function(req,res){
-      let defaultQuery={page:1,pageSize:10};
-      let {page,pageSize}=req.query.page?req.query:defaultQuery;
-      let resData=${data};
-      resData.data.page=page,
-      resData.data.pageSize=pageSize,
-      resData.data.records=30,
-      resData.data.rows=resData.data.rows.splice((page-1)*pageSize,pageSize);
-      res.send(JSON.stringify(resData));
-    })
     `
 };
 
