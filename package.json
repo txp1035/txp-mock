@@ -4,7 +4,9 @@
   "description": "模拟后端请求",
   "main": "index.js",
   "scripts": {
-    "start": "node src/build.js && node http/http.js"
+    "build": "node src/build.js && node http/http.js",
+    "hot": "supervisor src",
+    "start": "npm run hot"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   "homepage": "https://github.com/ShawDanon/txp-mock#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "mockjs": "^1.0.1-beta3"
+    "mockjs": "^1.0.1-beta3",
+    "supervisor": "^0.12.0"
   }
 }
