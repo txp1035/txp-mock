@@ -1,17 +1,9 @@
-const arr = [
-  {
-    method: 'get',
-    url: '/test4',
-    param: {
-      a: 1
-    }
+const arr = {
+  'GET /test1': {
+    a: 1
   },
-  {
-    method: 'get',
-    url: '/test2',
-    param: (req, res) => {
-      res.send('hhh');
-    }
+  'GET /test2': (req, res) => {
+    res.send('hhh');
   }
-];
+};
 module.exports = arr;
